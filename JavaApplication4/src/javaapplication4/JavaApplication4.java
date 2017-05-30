@@ -59,15 +59,15 @@ public class JavaApplication4 {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String alb = "abcdefghijklmnopqrstuvwxyz";
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in,"Cp1251"));
+        String alb = "абвгдежзиклмнопрстуфхцчшщъьэюя";
 
         ArrayList<Character> alphabet = new ArrayList<>();
         for (char c : alb.toCharArray()) {
             alphabet.add(c);
         }
 
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in,"Cp1251");
 
         System.out.println("Enter message");
 
